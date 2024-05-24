@@ -15,14 +15,14 @@ function copiarCodigoPix() {
 }
 
 function copiarChavePix() {
-    var ChavePix = "60983914168";
+    var ChavePix = "39.907.865/0001-71";
     navigator.clipboard.writeText(ChavePix)
     .then(() => {
         var botao = document.getElementById("CopiarPix");
         var icone = botao.querySelector("i");
         botao.innerHTML = "Copiado  <i class='fas fa-check'></i>";
         setTimeout(function() {
-            botao.innerHTML = "609.839.141.68  <i class='fas fa-copy'></i>";
+            botao.innerHTML = "39.907.865/0001-71  <i class='fas fa-copy'></i>";
         }, 1000);
     })
     .catch(err => {
